@@ -1,0 +1,59 @@
+{% load static %}
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="{% static 'css/design.css' %}" type="text/css">
+</head>
+
+
+
+
+{% block body %}
+
+<div class="bg" >
+
+
+<table>
+<tr>
+{% for giraffe in giraffes %}
+    <td bgcolor="white">{{giraffe.name}}</td>
+    <td bgcolor="green"> {{giraffe.animalStatus}} </td>
+    <td bgcolor="green"> {{giraffe.healthPercentage}}</td>
+{% endfor %}
+</tr>
+
+
+<tr>
+
+{% for monkey in monkeys %}
+
+   <td bgcolor="white">{{monkey.name}}</td>
+   <td bgcolor="green"> {{monkey.animalStatus}} </td>
+
+    <td bgcolor="green"> {{monkey.healthPercentage}} </td>
+{% endfor %}
+</tr>
+
+
+  <tr>
+{% for elephant in elephants %}
+   <td bgcolor="white">{{elephant.name}}</td>
+    <td bgcolor="green"> {{elephant.animalStatus}} </td>
+
+    <td bgcolor="green"> {{elephant.healthPercentage}} </td>
+{% endfor %}
+  </tr>
+</table>
+
+  <a href="{% url 'feedZoo' %}" class="feedButton">Feed zoo animals</a>
+<a href="{% url 'invokeHour' %}" class="provokebtn">Provoke an hour</a>
+    <h1 class="provokebtn">{{current_time}}</h1>
+
+    </div>
+
+{% endblock %}
+

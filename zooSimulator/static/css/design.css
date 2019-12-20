@@ -1,0 +1,86 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("background.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.feedButton{
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.feedButton:hover {
+	background-color:#5cbf2a;
+}
+.feedButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.provokebtn {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	background-color:#d0451b;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:14px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.provokebtn:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.provokebtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
